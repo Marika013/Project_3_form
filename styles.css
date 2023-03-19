@@ -1,0 +1,280 @@
+*{
+  box-sizing: border-box;
+}
+
+html{
+  --offset: 20px;
+}
+
+
+.background {
+  font-family: 'Comfortaa';
+  background-color: #f5f5f5;
+  width: 100%;
+  padding-top: 60px;
+  padding-bottom: 60px;
+ }
+
+
+
+.form {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1024px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  box-shadow: 10px 10px 10px #d4d4d4;
+  border-radius: 20px;
+  background-color: white;
+}
+
+#form-photo{
+  display: flex;
+  flex-grow: 1;
+  border-radius: 20px 0 0 20px;
+  background-size: contain;
+  padding: 0px;
+  object-fit: cover;
+}
+
+.form-content{
+  padding: 40px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+ }
+
+
+.input-field {
+  border-color: #d4d4d4;
+  border-radius: 5px;
+  border-width: 2px;
+  border-style: solid;
+  padding: 10px;
+  font-weight: 500;
+  font-size: 15px;
+  margin-top: 5px;
+  font-family: 'Comfortaa';
+ }
+
+.input-field-adress {
+  border-color: #d4d4d4;
+  border-radius: 5px;
+  border-width: 2px;
+  border-style: solid;
+  padding: 10px;
+  font-weight: 500;
+  font-size: 15px;
+  margin-top: 5px;
+  width: 155px;
+  font-family: 'Comfortaa';
+ }
+
+.input-field-delivery-adress{
+  border-color: #d4d4d4;
+  border-radius: 5px;
+  border-width: 2px;
+  border-style: solid;
+  padding: 10px;
+  font-weight: 500;
+  font-size: 15px;
+  margin-top: 5px;
+  width: 492px;
+  font-family: 'Comfortaa';
+}
+
+select{
+  border-color: #d4d4d4;
+  border-radius: 5px;
+  border-width: 2px;
+  border-style: solid;
+  padding: 10px;
+  font-weight: 500;
+  font-size: 14px;
+  font-family: 'Comfortaa';
+  margin-top: 5px;
+  width: 155px;
+}
+
+input:focus{
+  outline-color:rgba(4, 178, 169, 0.612);
+}
+
+select:focus{
+  outline-color:rgba(4, 178, 169, 0.612);
+}
+
+.registration{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  margin-bottom: 20px;
+ }
+
+.registration-header{
+  font-weight: 900;
+  font-size: 28px;
+  color: rgba(4, 178, 169, 0.612);
+  padding-bottom: 20px;
+ }
+
+.registration_form{
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--offset);    
+}
+
+.form_field_registration{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  flex-basis: 0;
+  width: calc((100%-var(--offset)*1)/2);
+}
+
+
+
+.adress{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 5px;
+  padding-top: 30px;
+ }
+
+.adress-header{
+  padding-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+ }
+
+.adress_form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  width: 100%;
+  gap: 9px;
+}
+
+.form_field_adress{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 32%;
+}
+
+.form_field_delivery-adress{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+h2{
+  font-weight: 600;
+  font-size: 20px;
+  color: #404040;
+ }
+
+p{
+  font-weight: 500;
+  font-size: 13px;
+  color: #737373;
+}
+
+
+
+.notifications{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-top: 5px;
+  margin-top: 30px;
+ }
+
+.notifications-header{
+  padding-bottom: 7px;
+}
+
+.notifications-text{
+  padding-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+ }
+
+.notifications_checkbox{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 5px;
+}
+
+.input_notifications{
+  margin-right: 10px;
+ }
+
+input.сheckbox-field{
+  appearance: none;
+  border-color: #d4d4d4;
+  border-radius: 5px;
+  border-width: 2px;
+  border-style: solid;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+}
+
+.сheckbox-field:checked{
+  border: rgba(4, 178, 169, 0.612) solid 3px;
+  background-image: url(icons8-done-26.png);
+  background-position: center;
+  background-size: contain;
+  border-radius: 5px;
+  width: 20px;
+  height: 20px;
+}
+
+.button_box{
+  margin-top: 30px;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+
+button{
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  width: 100%;
+  background-color:rgba(4, 178, 169, 0.612);
+  justify-content: center;
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 10px;
+  font-family: 'Comfortaa';
+  border-radius: 10px;
+  border: solid 3px;
+ }
+
+button:hover{
+  background-color:rgba(241, 139, 49, 0.977)
+}
+
+button:active{
+  background-color:rgb(226, 118, 23)
+}
+
+.border{
+  margin-top: 40px;
+  border-bottom: #e5e5e5 solid 1px;
+}
